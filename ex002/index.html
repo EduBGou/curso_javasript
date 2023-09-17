@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício ???</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+            background-color: rgb(190, 196, 255);
+        }
+        h2{
+            color: rgb(2, 2, 197);
+        }
+        h3{
+            color: rgb(255, 0, 0);
+        }
+    
+        div.topic{
+            color: red;
+        }
+        div#boton{
+            font: normal 22px Arial;
+            color: white;
+            background-color: rgb(2, 22, 46);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Window</h1>
+    <ul>
+        <li>Location</li>
+        <div class="topic">
+            <li>Document</li>
+        </div>
+        <li>History</li>
+    </ul>
+    <h2>Document</h2>
+    <ul>
+        <div class="topic">
+            <li>Head</li>
+            <li>Body</li>
+        </div>
+    </ul>
+    <h3>Head</h3>
+    <ul>
+        <li>Meta</li>
+        <li>Title</li>
+    </ul>
+    <h3>Body</h3>
+    <ul>
+        <li>Tags</li>
+    </ul>
+
+    <div id = "button" onclick="fClick()">CLIQUE AQUI</div>
+    <p id="msg"></p>
+
+    <!-- JS -->
+    <script>
+        var msg = '<a href="index2.html">SEU LINK</a>'
+        function fClick(){
+            var a = window.document.getElementById('button')
+            a.innerHTML = 'LINK ABAIXO!'
+            window.document.getElementById('msg').innerHTML = msg
+        }
+    </script>
+</body>
+</html>

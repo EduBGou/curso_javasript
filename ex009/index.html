@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p>Insira um valor de 0 à 100: <input type="number" name="textValue" id="textValue" min="0" max="100">
+            <input type="button" value="Adicionar" onclick="numAnalizer('table', 'textValue')"></p>
+            
+            <div  id="table"></div>
+        </div>
+        <p><input type="button" value="Finalizar" onclick="result('res')"></p>
+
+        <div id="res"></div>
+        
+    </section>
+    <footer>
+        <p>&copy; EduBGou</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
