@@ -1,7 +1,9 @@
-function fThemeMode(tag, mode, removeMode){
-    let obj = document.querySelector(`${tag}`)
+function fThemeMode(tag, mode){
+    let obj = document.querySelector(`${tag}`).classList
     console.log(tag, mode)
 
-    obj.classList.add(`${mode}`)
-    obj.classList.remove(`${removeMode}`)
+   obj.forEach(function(className){
+        obj.remove(className)
+    })
+    obj.add(`${mode}`)
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        div{
+            padding: 0px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+
+        div > p{
+            text-align: justify;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        input{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body onload="loaded()">
+    <h1>Eventos no JavaScript</h1>
+    <div onmouseover="mouseOver()" >
+        <p>Lorem ipsum dolor sit adamet, consectetur adipisicing elit. Rem vitae, aliquam, quas minima corporis laboriosam eos asperiores veritatis nesciunt excepturi tempora. Illum blanditiis itaque ipsam exercittione officia et nobis odit.</p>
+    </div>
+
+    <button id="anyBtn" type="button">Botão Qualquer</button>
+    <br>
+    <input type="text" name="" id="inputText" placeholder="Digite aqui" onfocus="inFocus()" onblur="inblur()" onkeypress="notifyPressed()">
+    <button id="btnSubmit" type="submit">Enviar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
