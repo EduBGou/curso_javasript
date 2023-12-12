@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root{
+    --color01: rgb(0, 0, 210);
+    --color02: rgb(0, 0, 120);
+    --color03: rgb(0, 0, 90);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#logotype{
+    text-align: left;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+
+nav{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+nav > a{
+    color: var(--color01);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+nav > a:hover{
+    color: var(--color02);
+    text-decoration: underline;
+}
+
+#imgHeader{
+    width: 100vw;
+    height: 300px;
+    background-image: url(images/filtroDeLinha.png);
+    background-position: top middle;
+}
+
+
+main > h1{
+    color: white;
+    background-color: var(--color02)
+}
