@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
 :root{
-    --color01: rgb(0, 0, 210);
-    --color02: rgb(0, 0, 120);
-    --color03: rgb(0, 0, 90);
+    --color01: rgb(60, 60, 255);
+    --color02: rgb(0, 0, 160);
+    --color03: rgb(255, 140, 0);
+    --color04: rgb(255, 235, 200);
+    --color05: rgb(255, 140, 0);
 }
 
 body{
@@ -16,7 +18,9 @@ body{
     margin: auto;
     /* border: 2px solid black; */
 }
-
+header{
+    margin-bottom: 20px;
+}
 nav{
     /* border: 2px solid red; */
     text-align: center;
@@ -41,11 +45,26 @@ nav > a:hover{
     width: 100vw;
     height: 300px;
     background-image: url(images/filtroDeLinha.png);
-    background-position: top middle;
+    background-size: 100%;
+    /* background-position: down middle; */
 }
 
+article#quemSomos{
+    background-color: var(--color04);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0px 5vw;
+}
+
+article#quemSomos > h1{
+    color: var(--color02);
+    margin: 0px;
+}
 
 main > h1{
+    background-color: var(--color02);
     color: white;
-    background-color: var(--color02)
+    text-align: center;
+    padding: 8px;
 }
