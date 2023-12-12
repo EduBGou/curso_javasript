@@ -5,7 +5,7 @@
     --color02: rgb(0, 0, 160);
     --color03: rgb(255, 140, 0);
     --color04: rgb(255, 235, 200);
-    --color05: rgb(255, 140, 0);
+    --color05: rgb(175, 210, 255);
 }
 
 body{
@@ -18,13 +18,11 @@ body{
     margin: auto;
     /* border: 2px solid black; */
 }
-header{
-    margin-bottom: 20px;
-}
+
 nav{
     /* border: 2px solid red; */
     text-align: center;
-    padding: 10px;
+    padding: 30px 10px;
     margin: auto;
 }
 
@@ -54,7 +52,7 @@ article#quemSomos{
     text-align: justify;
     padding: 20px;
     border-radius: 5px;
-    margin: 0px 5vw;
+    margin: 20px 5vw;
 }
 
 article#quemSomos > h1{
@@ -67,4 +65,19 @@ main > h1{
     color: white;
     text-align: center;
     padding: 8px;
+    margin: 0px;
+}
+
+section#showPets{
+    background-color: var(--color05);
+    text-align: center;
+    padding: 30px 5px;
+}
+
+section.imgPets{
+    display: inline-block;
+    width: 210px;
+    height: 270px;
+    background-color: white;
+    margin: 10px;
 }
