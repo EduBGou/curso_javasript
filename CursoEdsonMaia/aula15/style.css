@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+div{
+    background-color: white;
+    margin: 10px;
+}
+
+input{
+    margin: 5px 0px;
+}
+
+#inputGrade, #results{
+    max-width: 240px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button{
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#buttons{
+    max-width: 240px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+#bttnCalc{
+    color: white;
+    background-image: linear-gradient(0deg, rgb(0, 0, 180), rgb(0, 0, 255));
+}
+
+#bttnClean{
+    color: white;
+    background-image: linear-gradient(0deg, rgb(180, 0, 0), rgb(255, 0, 0));
+}
+
+#situation{
+    color: rgb(80, 80, 80);
+    text-align: center;
+    background-color: gainsboro;
+    padding: 5px;
+    border: 0px solid black;
+    border-radius: 5px;
+}
