@@ -10,9 +10,9 @@
     <h1>Calcular Média</h1>
     <div id="inputGrade">
         <label for="grade01">Nota 1</label>
-        <input type="number" id="grade01"><br>
+        <input type="number" id="grade01" min="0" max="10" onblur="vldNum()">
         <label for="grade02">Nota 2</label>
-        <input type="number" id="grade02">
+        <input type="number" id="grade02" min="0" max="10" onblur="vldNum()">
     </div>
 
     <div id="buttons">
@@ -21,10 +21,11 @@
     </div>
 
     <div id="results">
-        <label for="media">Média</label>
-        <input type="text" id="media" readonly>
+        <label for="avr">Média</label>
+        <input type="text" id="avr" readonly>
         <div id="situation">Situação do Estudante</div>
     </div>
+    <p id="alert"></p>
 <script src="script.js"></script>
 </body>
 </html>
