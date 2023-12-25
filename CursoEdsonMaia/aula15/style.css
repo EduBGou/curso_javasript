@@ -2,52 +2,41 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(240, 240, 240);
-}
-/* 
-div{
-    background-color: white;
-    margin: 10px;
+    
 }
 
-input{
-    margin: 5px 0px;
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
 }
 
-#inputGrade, #results{
-    max-width: 240px;
-    padding: 5px 10px;
+div#inputGrade, div#results{
+    display: flex;
+    flex-direction: column;
+    
+
+    background-color: rgb(230, 230, 230);
+    gap: 5px;
+    padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
 button{
-    font-weight: bold;
     padding: 5px;
+    border: 1px solid black;
     border-radius: 5px;
+    margin: 20px;
 }
 
-#buttons{
-    max-width: 240px;
-    background-color: rgba(255, 255, 255, 0);
-    text-align: center;
-}
-
-#bttnCalc{
+.red{
+    width: 100%;
     color: white;
-    background-image: linear-gradient(0deg, rgb(0, 0, 180), rgb(0, 0, 255));
-}
+    background-color: red;
 
-#bttnClean{
-    color: white;
-    background-image: linear-gradient(0deg, rgb(180, 0, 0), rgb(255, 0, 0));
-}
-
-#situation{
-    color: rgb(80, 80, 80);
     text-align: center;
-    background-color: gainsboro;
-    padding: 5px;
-    border: 0px solid black;
+    padding: 5px 0px;
     border-radius: 5px;
-} */
+    margin-top: 10px;
+}
