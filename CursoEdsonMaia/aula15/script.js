@@ -1,3 +1,5 @@
+let canCalc = false
+
 function vldNum(obj){
     let num = obj.value
     let elementAlert = document.querySelector('#alert')
@@ -8,8 +10,10 @@ function vldNum(obj){
         console.log(num)
         elementAlert.textContent = ''
         elementAlert.className = ''
+        canCalc = true
     }
 }
+
 
 let bxGrade01 = document.querySelector('#grade01')
 let bxGrade02 = document.querySelector('#grade02')
@@ -21,6 +25,7 @@ let inputAvrg = document.querySelector('#avrg')
 let situation = document.querySelector('#situation')
 
 bttnCalc.addEventListener('click', () => {
+    if (canCalc == true){}
     let num01 = Number(bxGrade01.value)
     let num02 = Number(bxGrade02.value)
     let avrg = (num01 + num02) / 2
