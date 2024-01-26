@@ -16,6 +16,7 @@ function generate_secret_num()
     console.log(`Secret Number = ${secret_num}`)
 }
 
+
 function validate_entered_num(value)
 {
     if (value < 1 || value > 10){
@@ -31,6 +32,7 @@ function validate_entered_num(value)
         button_guess.removeAttribute('disabled')
     }
 }
+
 
 function play_game()
 {
@@ -67,6 +69,7 @@ function play_game()
             warning.textContent = 'Situation not found!'
     }
 }
+
 
 function turn_sound()
 {   
