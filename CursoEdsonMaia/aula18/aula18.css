@@ -1,0 +1,19 @@
+
+main{
+    margin: 10px;
+}
+
+div#form-group{
+    display: flex;
+    gap: 2vw;
+}
+
+div#form-group div{
+    align-items: center;
+    justify-content: center;
+}
+
+input.foreing-currency{
+    height: 1rem;
+    margin: auto;
+}

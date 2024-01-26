@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18 | Conversor de Moedas</title>
+    <link rel="stylesheet" href="aula18.css">
+</head>
+<body>
+    <main id="main-screen">
+        <h1>Conversor de Moedas</h1>
+
+        <div id="form-group">
+
+            <div>
+                <label for="value-in-real">Value in R$</label>
+                <input type="number" name="value-in-real" id="value-in-real" min="0.00" step="1" onblur="validate_value()" autofocus>
+            </div>
+
+            <div>
+                <label for="dollar">Dollar</label>
+                <input type="radio" class="foreing-currency" name="foreing-currency" id="dollar" value="dollar" checked>
+            </div>
+
+            <div>
+                <label for="euro">Euro</label>
+                <input type="radio" class="foreing-currency" name="foreing-currency" id="euro"       value="euro">
+            </div>
+
+            <div>
+                <label for="pound">Pound</label>
+                <input type="radio" class="foreing-currency" name="foreing-currency" id="pound"      value="pound">
+            </div>
+
+            <div>
+                <label for="bitcoin">Bitcoin</label>
+                <input type="radio" class="foreing-currency" name="foreing-currency" id="bitcoin"    value="bitcoin">
+            </div>
+
+        </div>
+        <button type="button" onclick="convert_currencies()" id="convert-button" disabled >Converter</button>
+        <p id="warning"></p>
+    </main>
+    <script src="aula18.js"></script>
+</body>
+</html>
