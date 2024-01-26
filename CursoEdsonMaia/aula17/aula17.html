@@ -19,16 +19,16 @@
                 name="inputNum"
                 id="inputNum"
                 class="inputAnim"
-                onBlur="validate_entered_num(this.value)"
-                onClick="play_background_sound(); active_button_guess()"/>
+                onBlur="validate_entered_num(this.value)"/>
             <button
                 id='buttonGuess'
                 class='button'
+                disabled
                 onClick="play_game()"    
             >Chutar</button>
             <br>
             <button
-                id='button_sound'
+                id='buttonSound'
                 class='button'
                 onClick="turn_sound()"    
             >&#9835;</button>
@@ -37,8 +37,8 @@
     </main>
 
 <!-- AUDIO musica de fundo -->
-    <audio preload="auto" autoplay loop
-        id="background_sound"
+    <audio preload="metadata" autoplay loop
+        id="backgroundSound"
         src="sounds/opening_mentalist.mp3"></audio>
 
     <!-- LINK PARA O JS EXTERNO -->
