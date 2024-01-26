@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17</title>
+    <link rel="stylesheet" href="css/aula17.css"/>
+</head>
+<body onLoad='generate_secret_num()'>
+    <main id="homeScreen">
+        <h1>Adivinhar número secreto</h1>
+        <p class='centerContent' id='hint'>Digite um número entre 1 e 10</p>
+        <section class="conteudos">
+            <input
+                type="number"
+                step="1"
+                min="1"
+                max="10"
+                name="inputNum"
+                id="inputNum"
+                class="inputAnim"
+                onBlur="validate_entered_num(this.value)"
+                onClick="play_background_sound(); active_button_guess()"/>
+            <button
+                id='buttonGuess'
+                class='button'
+                onClick="play_game()"    
+            >Chutar</button>
+            <br>
+            <button
+                id='button_sound'
+                class='button'
+                onClick="turn_sound()"    
+            >&#9835;</button>
+        </section>
+        <p class='centerContent' id='warning'></p>
+    </main>
+
+<!-- AUDIO musica de fundo -->
+    <audio preload="auto" autoplay loop
+        id="background_sound"
+        src="sounds/opening_mentalist.mp3"></audio>
+
+    <!-- LINK PARA O JS EXTERNO -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
