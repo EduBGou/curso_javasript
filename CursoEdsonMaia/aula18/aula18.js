@@ -36,8 +36,7 @@ function convert_currencies()
     for(let i = 0; i < foreing_currency.length; i++){
         if (foreing_currency[i].checked){
             final_value = value_in_real / exchange_values[i]
-            
-            warning.textContent = final_value.toFixed(3)
+            warning.textContent = final_value
         }
     }
 }
